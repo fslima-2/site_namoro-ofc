@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="hearts-container"></div>
+
+<script>
+  const container = document.querySelector(".hearts-container");
+
+  for (let i = 0; i < 30; i++) {
+    let heart = document.createElement("div");
+    heart.className = "heart";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDelay = Math.random() * 10 + "s";
+    heart.style.opacity = Math.random();
+    heart.style.transform = `scale(${Math.random() + 0.5}) rotate(45deg)`;
+    container.appendChild(heart);
+  }
+</script>
+
+    <header class="Cabecalho">
+    <nav class="Cabecalho__menu">
+        <a class="Cabecalho__menu__link" href="primeira-pag.html">Início</a>
+        <a class="Cabecalho__menu__link" href="album.html">Álbum</a>
+    </nav>
+</header>
+
+    <main class="Corpo">
+        <section class="Corpo__apresentacao">
+            <h1 class="Corpo__apresentacao__Titulo">Nossa História</h1>
+            <p class="Corpo__apresentacao__texto">
+                A nossa história começou no dia 16 de novembro, quando nos conhecemos de um jeito simples, leve e
+                natural. A gente foi se aproximando aos poucos, sem forçar nada, só deixando as coisas acontecerem do
+                jeito que tinham que ser. Em pouco tempo, criamos uma conexão forte, verdadeira, e quando percebemos, o
+                sentimento já era amor.<br>
+
+            <br>Depois de 40 dias juntos, dissemos “eu te amo” pela primeira vez. Não foi só uma frase, foi a confirmação de
+                tudo o que já estávamos sentindo um pelo outro. No dia 1º de fevereiro, demei um passo importante, pedi a mulher
+                mais incrível em namoro. Foi um momento especial, marcante, que mostrou que a gente queria mesmo ficar junto.<br>
+
+            <br>Mas como nas histórias de princesa, a nossa também teve desafios. Um tempo depois, tive que me mudar de
+                cidade, indo pra Salvador pra começar a faculdade. Foi difícil encarar a distância, a saudade, o medo 
+                do que poderia acontecer, principalmete pela forma que tudo aconteceu. Mesmo assim, continuamos firmes, 
+                mantendo o amor vivo, aprendendo a lidar com a ausência física, mas mantendo a presença emocional.<br>
+
+            <br>Passamos por muitas dificuldades, e uma das fases mais difíceis que foi quando você precisou ser internada. Foram
+                dias complicados, cheios de preocupação, mas em nenhum momento deixamos de estar juntos. O apoio, o carinho
+                e o amor sempre estiveram ali, mesmo de longe, em cada vizita, cada mini ligação que a gente fazia. Conseguimos
+                provar pra nós mesmos que o que sentimos é forte de verdade e pode ultrapassar qualquer barreira.<br>
+
+            <br>Hoje sabemos que a distância, por pior que tenha sido, nunca foi um obstáculo real. <strong class= "frase__texto">Porque
+                quando a pessoa significa tudo, a distância não significa nada</strong>. Esse site é uma forma de eternizar tudo isso, 
+                de guardar nossos momentos, de mostrar que o nosso amor venceu cada desafio e continua crescendo, firme, verdadeiro e
+                cheio de planos pela frente.<br>
+
+            <br>Te amo meu amor! 🤍🤍🤍
+            </p>
+        </section>
+        <img src="./asssets/foto_casal_menor.png" alt="foto-casal-parte2">
+    </main>
+
+    <footer class="rodape">
+    <p>Te amando a mais de 220 dias!</p>
+    </footer>
+
+</body>
+</html>

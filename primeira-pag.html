@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa História</title>
+     <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+   
+<div class="hearts-container"></div>
+
+<script>
+  const container = document.querySelector(".hearts-container");
+
+  for (let i = 0; i < 30; i++) {
+    let heart = document.createElement("div");
+    heart.className = "heart";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDelay = Math.random() * 10 + "s";
+    heart.style.opacity = Math.random();
+    heart.style.transform = `scale(${Math.random() + 0.5}) rotate(45deg)`;
+    container.appendChild(heart);
+  }
+</script>
+
+<header class="Cabecalho">
+    <nav class="Cabecalho__menu">
+        <a class="Cabecalho__menu__link" href="sobre-nos.html">Sobre Nós</a>
+        <a class="Cabecalho__menu__link" href="album.html">Álbum</a>
+    </nav>
+</header>
+
+<main class="Corpo">
+    <section class="Corpo__apresentacao">
+        <h1 class="Corpo__apresentacao__Titulo">Welcome to Our <strong class="titulo__destaque">Love</strong> Story</h1>
+        <p class="Corpo__apresentacao__texto">
+            This is our special place, a little corner of the internet where we celebrate our journey together.
+            From unforgettable memories to dreams we're building side by side, this site is all about us.
+            Let love guide every step we take. 💖</p>
+    </section>
+    <img src="./asssets/foto-inicio.png" class="foto-inicio" alt="Foto especial nossa">
+</main>
+
+<footer class="rodape">
+    <p>Te amando a mais de 220 dias!</p>
+</footer>
+</body>
+</html>

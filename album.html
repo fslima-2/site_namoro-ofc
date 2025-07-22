@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+  <div class="hearts-container"></div>
+
+<script>
+  const container = document.querySelector(".hearts-container");
+
+  for (let i = 0; i < 30; i++) {
+    let heart = document.createElement("div");
+    heart.className = "heart";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDelay = Math.random() * 10 + "s";
+    heart.style.opacity = Math.random();
+    heart.style.transform = `scale(${Math.random() + 0.5}) rotate(45deg)`;
+    container.appendChild(heart);
+  }
+</script>
+
+     <header class="Cabecalho">
+    <nav class="Cabecalho__menu">
+        <a class="Cabecalho__menu__link" href="primeira-pag.html">Início</a>
+        <a class="Cabecalho__menu__link" href="sobre-nos.html">Sobre Nós</a>
+    </nav>
+</header>
+
+    <main class="galeria">
+
+        <div class="foto-item">
+      <img src="./asssets/foto_reduzida_galeria.png" alt="Foto Formatura" />
+      <p class="polaroide">Nosso primeiro encontro</p>
+        </div>
+
+        <div class="foto-item">
+      <img src="./asssets/foto_reduzida_praia.png" alt="Foto Praia" />
+      <p class="polaroide">Um dia na praia</p>
+        </div>
+
+        <div class="foto-item">
+      <img src="./asssets/foto--fofa.png" alt="Foto Encontro" />
+      <p class="polaroide">Nosssa Loucura</p>
+        </div>
+
+        <div class="foto-item">
+      <img src="./asssets/foto--encontro.png" alt="Foto 4" />
+      <p class="polaroide">Sorriso mais lindo</p>
+        </div>
+
+        <div class="foto-item">
+      <img src="./asssets/foto--natal.png" alt="Foto 5" />
+      <p class="polaroide">Nosso primeiro Natal juntos e também a primeira vez em que trocamos um eu te amo. Primeira vez conhenco sua familia quase toda.  </p>
+        </div>
+
+        <div class="foto-item">
+      <img src="./asssets/foto_reduzida_vestido.png" alt="Foto 6" />
+      <p class="polaroide">Esse foi o dia em que eu, com o coração acelerado e um sorriso bobo no rosto, eu pedi você para ser minha. E entre risos, abraços e aquele brilho no olhar, você disse sim.</p>
+        </div>
+
+        <div class="foto-item">
+      <img src="./asssets/foto_reduzida_flor.png" alt="Foto 7" />
+      <p class="polaroide">Momentos</p>
+        </div>
+
+        <div class="foto-item">
+      <img src="./asssets/foto_reduzida_jantar.png" alt="Foto 8" />
+      <p class="polaroide">Nosso  Jantar</p>
+        </div>
+
+        <div class="foto-item">
+      <img src="./asssets/foto_reduzida_formatura.png" alt="Foto 9" />
+      <p class="polaroide">Formatura</p>
+        </div>
+
+    </main>
+
+    <footer class="rodape">
+    Com amor para você 💖
+  </footer>
+
+  
+</body>
+</html>
